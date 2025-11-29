@@ -1,0 +1,141 @@
+:root {
+  --main-color: #ff206e;
+  --main-hover-color: #b31f53;
+}
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.custom-bg {
+  background-color: #000;
+}
+.text-pink {
+  color: var(--main-color);
+}
+
+#home {
+  background-image: url("./images/bg_osaka.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+
+  .content a {
+    color: var(--main-color);
+    transition: color 0.3s;
+  }
+
+  .content a:hover {
+    color: var(--main-hover-color);
+  }
+
+  .icon {
+  
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    transition: border 0.3s;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+
+
+  .icon:hover {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+  }
+}
+
+#about {
+  background-image: url("./images/light_dot.jpg");
+  .first-heading {
+  font-size: 80px;
+  color: #00000079;
+  letter-spacing: 10px;
+}
+.second-heading {
+  
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+}
+#services {
+  background-image: url("./images/dark_dot.jpg");
+  .first-heading {
+  font-size: 80px;
+  color: #ffffff2a;
+  letter-spacing: 10px;
+}
+.second-heading {
+  color: #fff;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+}
+.paragraph {
+  text-align: center;
+}
+.services{
+    background-image: url(../img/dark_dot.jpg);
+}
+.services .title h2{
+color: #222;
+font-size: 80px;
+}
+.services .title h3{
+    color: white;
+    position: relative;
+    font-size: 40px;
+}
+.services .services-item h3:after{
+    content: '';
+    position: absolute;
+    top:85px;
+    left:50%;
+    width: 22%;
+    height: 6px;
+    background-color: var(--maincolor);
+    transform: translate(-50%);
+}
+.services .services-item:hover h3::after{
+width: 30%;
+}
+.line{
+background: var(--main-color);
+height: 2px;
+}
+ .icon i{
+ 
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+.icon i:hover{
+   color: var(--main-color);
+}
+.carousel-indicators [data-bs-target]{
+text-indent: 0;
+height: 30px;
+border-radius: 50%;
+overflow: hidden;
+}
+
+.projects .title h2{
+  color: #22222242;
+font-size: 80px;
+letter-spacing: 10px;
+}
+.projects .title h3{
+    color: black;
+    position: relative;
+    font-size: 40px;
+}
+#testimonials .title h2{
+  color: #22222242;
+font-size: 80px;
+letter-spacing: 10px;
+}
+#testimonials .title h3{
+    color: black;
+    position: relative;
+    font-size: 40px;
+}
